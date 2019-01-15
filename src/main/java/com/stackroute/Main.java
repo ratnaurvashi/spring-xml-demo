@@ -31,5 +31,10 @@ public class Main {
         Movie movie3=(Movie) context.getBean("movie1");
         System.out.println("Using ApplicationContext: "+ movie3.getActor());
 
+        Movie movie4=(Movie) context.getBean("movie2");
+        System.out.println(movie4.getActor());
+
+        Movie movie5=(Movie) context.getBean("movie3");
+        System.out.println(movie5.getActor());
     }
 }
