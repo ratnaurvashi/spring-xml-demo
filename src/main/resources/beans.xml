@@ -16,15 +16,21 @@
         <property name="actor" ref="actor1"></property>
     </bean>
 
-    <bean id="actor" class="com.stackroute.domain.Actor" >
-        <property name="name" value="Shahrukh"></property>
-        <property name="gender" value="Male"></property>
-        <property name="age" value="45"></property>
-    </bean>
-    <bean id="movie2" class="com.stackroute.domain.Movie" autowire="byName"></bean>
+    <!--<bean id="actor" class="com.stackroute.domain.Actor" >-->
+        <!--<property name="name" value="Shahrukh"></property>-->
+        <!--<property name="gender" value="Male"></property>-->
+        <!--<property name="age" value="45"></property>-->
+    <!--</bean>-->
+    <!--<bean id="movie2" class="com.stackroute.domain.Movie" autowire="byName"></bean>-->
 
-    <bean id="movie3" class="com.stackroute.domain.Movie">
-        <constructor-arg name="actor" ref="actor1"></constructor-arg>
+    <!--<bean id="movie3" class="com.stackroute.domain.Movie">-->
+        <!--<constructor-arg name="actor" ref="actor1"></constructor-arg>-->
+    <!--</bean>-->
+
+    <bean id="actor2" class="com.stackroute.domain.Actor" >
+        <property name="name" value="Ranbir"></property>
+        <property name="gender" value="Male"></property>
+        <property name="age" value="34"></property>
     </bean>
 
 </beans>
