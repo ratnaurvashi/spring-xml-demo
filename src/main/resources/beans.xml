@@ -33,4 +33,5 @@
         <property name="age" value="34"></property>
     </bean>
 
+    <bean id="BeanLifecycleDemoBean" class="com.stackroute.domain.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy"></bean>
 </beans>
