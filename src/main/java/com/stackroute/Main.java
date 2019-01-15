@@ -27,9 +27,20 @@ public class Main {
         System.out.println("Using Spring 3.2 BeanDefinitionRegistry and BeanDefinitionReader: "+movie2.getActor());
 
         //Using ApplicationContext
-        ApplicationContext context=new ClassPathXmlApplicationContext("beans.xml");
-        Movie movie3=(Movie) context.getBean("movie1");
+        ApplicationContext context1=new ClassPathXmlApplicationContext("beans.xml");
+        Movie movie3=(Movie) context1.getBean("movie1");
         System.out.println("Using ApplicationContext: "+ movie3.getActor());
 
+        Movie movie4=(Movie) context1.getBean("movie2");
+        System.out.println("Using ApplicationContext: "+ movie4.getActor());
+
+        Movie movie5=(Movie) context1.getBean("movie2");
+        System.out.println(movie4==movie5);
+
+        Movie movie6=(Movie) context1.getBean("movieA");
+        System.out.println("Using ApplicationContext: "+ movie6.getActor());
+
+        Movie movie7=(Movie) context1.getBean("movieB");
+        System.out.println("Using ApplicationContext: "+ movie7.getActor());
     }
 }
